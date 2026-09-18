@@ -1,2 +1,25 @@
-# bilibili-sql-analysis
-B站知识区UP主视频数据分析（SQL版）
+# B站知识区UP主视频数据分析（SQL版）
+
+## 项目背景
+分析B站知识区视频数据，找出影响播放量和弹幕数的因素，为内容运营提供建议。
+
+## 数据说明
+- 数据来源：B站搜索接口
+- 数据量：140条
+- 覆盖分区：科学科普、财经商业、校园学习、职业职场、设计创意
+
+## 技术栈
+- 数据库：MySQL
+- SQL：JOIN、GROUP BY、CASE WHEN、窗口函数、CTE
+
+## 分析问题
+1. 哪个分区平均播放量最高？
+2. 哪个分区平均弹幕数最高？
+3. 时长和播放量有什么关系？
+4. 各分区播放量Top3是哪些？
+
+## 文件说明
+- `sql/01_create_table.sql`：建表
+- `sql/02_insert_categories.sql`：分区数据
+- `sql/03_analysis.sql`：基础分析
+- `sql/04_advanced.sql`：窗口函数
